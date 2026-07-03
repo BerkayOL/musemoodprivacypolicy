@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MuseMood Privacy Policy</title>
     <meta name="description"
-        content="MuseMood privacy policy for the local-first museum art-card app. No account, no ad tracking, and on-device storage by design.">
-    <meta name="theme-color" content="#16120f">
+        content="MuseMood privacy policy for a local-first museum art-card experience with no required account and no ad tracking.">
+    <meta name="theme-color" content="#17120f">
     <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 
 <body>
     <div class="page-shell">
-        <header class="topbar">
+        <header class="topbar topbar-soft">
             <a class="brand-lockup" href="../" aria-label="MuseMood home">
                 <img class="brand-mark" src="../assets/images/musemood_monochrome.png" alt="MuseMood logo">
                 <span class="brand-text">
@@ -21,201 +21,328 @@
                     <span class="brand-name">MuseMood</span>
                 </span>
             </a>
-            <a class="topbar-link" href="mailto:berkay81341@gmail.com">Contact privacy desk</a>
+            <div class="topbar-actions">
+                <a class="topbar-link" href="../">Return to index</a>
+                <a class="topbar-link topbar-link-strong" href="mailto:berkay81341@gmail.com">Privacy desk</a>
+            </div>
         </header>
 
+        <section class="policy-stage" id="overview">
+            <div class="policy-stage-head">
+                <div>
+                    <span class="eyebrow eyebrow-dark">Local-first privacy policy</span>
+                    <h1>Privacy Policy</h1>
+                </div>
+                <div class="policy-stage-mark-wrap">
+                    <img class="policy-stage-mark" src="../assets/images/musemood_monochrome.png" alt="MuseMood mark">
+                </div>
+            </div>
+
+            <div class="policy-stage-body">
+                <p class="lede">
+                    MuseMood is a local-first museum art-card app. The core experience is designed to work without
+                    sign-in walls, advertising SDKs, or taste-profiling analytics. This page explains what may stay on
+                    your device, when public-source network requests happen, and where third-party museum
+                    infrastructure begins.
+                </p>
+
+                <div class="policy-stage-summary">
+                    <div>
+                        <span class="policy-summary-label">Last updated</span>
+                        <strong>July 3, 2026</strong>
+                    </div>
+                    <div>
+                        <span class="policy-summary-label">Account model</span>
+                        <strong>Not required</strong>
+                    </div>
+                    <div>
+                        <span class="policy-summary-label">Tracking posture</span>
+                        <strong>No ads, no analytics</strong>
+                    </div>
+                    <div>
+                        <span class="policy-summary-label">Data model</span>
+                        <strong>Local-first by design</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="policy-layout">
-            <nav class="policy-nav" aria-label="Policy sections">
-                <h2>Contents</h2>
-                <a href="#overview">Overview</a>
-                <a href="#identity">1. App identity</a>
-                <a href="#accounts">2. Accounts</a>
-                <a href="#tracking">3. Ads and tracking</a>
-                <a href="#device-data">4. Data on your device</a>
-                <a href="#network">5. Network requests</a>
-                <a href="#links">6. External links</a>
-                <a href="#deletion">7. Deletion and cache clearing</a>
-                <a href="#children">8. Children</a>
-                <a href="#attribution">9. Attribution and non-affiliation</a>
-                <a href="#contact">10. Contact</a>
+            <nav class="policy-rail" aria-label="Policy sections">
+                <div class="policy-rail-shell">
+                    <div class="policy-rail-intro">
+                        <span class="policy-rail-label">Contents</span>
+                        <p>Each chapter isolates one boundary: identity, storage, network behavior, deletion, or external-source responsibility.</p>
+                    </div>
+
+                    <div class="policy-rail-list">
+                        <a href="#identity" data-policy-link>
+                            <span>01</span>
+                            <strong>App identity</strong>
+                        </a>
+                        <a href="#accounts" data-policy-link>
+                            <span>02</span>
+                            <strong>Accounts</strong>
+                        </a>
+                        <a href="#tracking" data-policy-link>
+                            <span>03</span>
+                            <strong>Ads and tracking</strong>
+                        </a>
+                        <a href="#device-data" data-policy-link>
+                            <span>04</span>
+                            <strong>Data on your device</strong>
+                        </a>
+                        <a href="#network" data-policy-link>
+                            <span>05</span>
+                            <strong>Network requests</strong>
+                        </a>
+                        <a href="#links" data-policy-link>
+                            <span>06</span>
+                            <strong>External links</strong>
+                        </a>
+                        <a href="#deletion" data-policy-link>
+                            <span>07</span>
+                            <strong>Deletion and cache clearing</strong>
+                        </a>
+                        <a href="#children" data-policy-link>
+                            <span>08</span>
+                            <strong>Children</strong>
+                        </a>
+                        <a href="#attribution" data-policy-link>
+                            <span>09</span>
+                            <strong>Attribution and non-affiliation</strong>
+                        </a>
+                        <a href="#contact" data-policy-link>
+                            <span>10</span>
+                            <strong>Contact</strong>
+                        </a>
+                    </div>
+
+                    <div class="policy-rail-note">
+                        <span class="policy-rail-label">Privacy posture</span>
+                        <p>The goal here is clarity, not overclaiming. MuseMood describes its own role precisely and does not pretend to control third-party museum systems.</p>
+                    </div>
+                </div>
             </nav>
 
             <main class="policy-main">
-                <section class="policy-hero" id="overview">
-                    <div class="policy-hero-bar">
-                        <div>
-                            <span class="brand-kicker">Local-first privacy policy</span>
-                            <h1>Privacy Policy</h1>
+                <section class="policy-atlas" aria-label="Quick summary">
+                    <article>
+                        <span class="policy-atlas-label">Collected directly</span>
+                        <strong>No account identity required</strong>
+                        <p>No name, email, profile, or password is required for the ordinary core experience.</p>
+                    </article>
+                    <article>
+                        <span class="policy-atlas-label">Stored locally</span>
+                        <strong>Preferences, decks, and caches</strong>
+                        <p>Device-side storage supports offline readiness, saved cards, and session preparation.</p>
+                    </article>
+                    <article>
+                        <span class="policy-atlas-label">Shared indirectly</span>
+                        <strong>Standard request metadata</strong>
+                        <p>When public sources are contacted, those hosts may receive technical request data such as IP address.</p>
+                    </article>
+                </section>
+
+                <section class="chapter-list">
+                    <article class="chapter" id="identity" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">01</span>
+                            <h2>App identity</h2>
+                            <p>MuseMood is a public-art discovery and collectible card experience.</p>
                         </div>
-                        <img class="policy-hero-logo" src="../assets/images/musemood_monochrome.png"
-                            alt="MuseMood mark">
-                    </div>
+                        <div class="chapter-body">
+                            <p>
+                                MuseMood helps people discover and curate public museum artworks through a mood-based
+                                collectible card interface.
+                            </p>
+                            <p>
+                                It is built as a local-first app. The core experience is designed to function without a
+                                persistent personal profile stored by MuseMood.
+                            </p>
+                        </div>
+                    </article>
 
-                    <p class="lede">
-                        MuseMood is a local-first museum art-card app. The core experience is designed to work without
-                        accounts, advertising SDKs, or analytics profiling. This page explains what may be stored on
-                        your device, when the app talks to public museum sources, and what remains outside MuseMood's
-                        control.
-                    </p>
+                    <article class="chapter" id="accounts" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">02</span>
+                            <h2>Accounts</h2>
+                            <p>The ordinary experience is not locked behind registration or identity collection.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                MuseMood does not require account creation, sign-in, or profile registration to use the
+                                core app experience.
+                            </p>
+                            <p>
+                                MuseMood does not ask you to submit your name, email address, password, phone number,
+                                or similar personal identity information for ordinary use.
+                            </p>
+                        </div>
+                    </article>
 
-                    <div class="policy-hero-meta" aria-label="Policy summary">
-                        <span class="hero-chip">Last updated: July 3, 2026</span>
-                        <span class="hero-chip">No account required</span>
-                        <span class="hero-chip">No ads</span>
-                        <span class="hero-chip">No analytics tracking</span>
-                        <span class="hero-chip">Local-first storage model</span>
-                    </div>
+                    <article class="chapter" id="tracking" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">03</span>
+                            <h2>Ads and tracking</h2>
+                            <p>The product is intentionally positioned away from ad-tech and profiling infrastructure.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                MuseMood does not intentionally include advertising SDKs, analytics SDKs, or behavioral
+                                tracking systems for the core app experience.
+                            </p>
+                            <p>
+                                This static policy site also does not include cookies, analytics scripts, ad pixels, or
+                                third-party tracking tags.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter chapter-accent" id="device-data" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">04</span>
+                            <h2>Data on your device</h2>
+                            <p>Local storage exists to support readiness, continuity, and on-device comfort.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                To support offline readiness and a smooth art-card experience, MuseMood may keep data
+                                locally on your device. Depending on the features in use, this can include:
+                            </p>
+                            <ul>
+                                <li>Saved or favorited artwork cards</li>
+                                <li>Mood selections and source preferences</li>
+                                <li>Theme, reduced-motion, haptics, and similar settings</li>
+                                <li>Cached artwork images and public museum metadata</li>
+                                <li>Prepared daily decks, session decks, and related readiness state</li>
+                                <li>Local cache health or source readiness metadata</li>
+                            </ul>
+                            <p>
+                                This information is intended to remain on your device unless you clear app data, clear
+                                cache, uninstall the app, or use an in-app cache-clearing control.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter" id="network" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">05</span>
+                            <h2>Network requests</h2>
+                            <p>Network traffic exists to fetch public artwork records, images, and related source facts.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                MuseMood may connect to public museum APIs, public knowledge sources, and image servers
+                                to load artwork records, artwork images, and related source metadata.
+                            </p>
+                            <p>
+                                Examples may include The Metropolitan Museum of Art, Rijksmuseum, Wellcome Collection,
+                                and Wikidata.
+                            </p>
+                            <p>
+                                When these requests occur, the source or host serving the response may receive standard
+                                technical request information such as your IP address, request headers, and timing
+                                data, according to its own privacy practices.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter" id="links" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">06</span>
+                            <h2>External links</h2>
+                            <p>When you leave MuseMood for a museum page, control shifts to that external site.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                MuseMood may open official museum or source pages in your browser or another app when
+                                you choose to view an external record.
+                            </p>
+                            <p>
+                                Those external websites are not operated by MuseMood and may follow separate privacy
+                                policies, security practices, and terms.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter" id="deletion" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">07</span>
+                            <h2>Deletion and cache clearing</h2>
+                            <p>Clearing an image cache is narrower than wiping every category of local app state.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                You can usually remove locally stored MuseMood data through Android system settings by
+                                clearing app storage or app data.
+                            </p>
+                            <p>
+                                If the app offers an image-cache clearing action, that control is intended to remove
+                                cached artwork images rather than every category of local app state.
+                            </p>
+                            <p>
+                                Uninstalling the app may also remove local data, subject to how your device and
+                                operating system handle app storage.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter" id="children" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">08</span>
+                            <h2>Children</h2>
+                            <p>The core experience is not designed specifically as a children's data product.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                MuseMood is not designed specifically for children and does not knowingly collect
+                                personal data from children for the core app experience.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter" id="attribution" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">09</span>
+                            <h2>Attribution and non-affiliation</h2>
+                            <p>Museum records and source metadata remain the responsibility of their originating institutions.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                Artwork records, images, metadata, and source pages remain the property or
+                                responsibility of their respective institutions and providers.
+                            </p>
+                            <p>
+                                MuseMood is not affiliated with, sponsored by, or endorsed by The Metropolitan Museum
+                                of Art, Rijksmuseum, Wellcome Collection, Wikidata, or any other source provider unless
+                                explicitly stated elsewhere.
+                            </p>
+                            <p>
+                                Museum-provided titles, artist names, and metadata may appear in their original
+                                language or source format.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="chapter" id="contact" data-policy-section>
+                        <div class="chapter-meta">
+                            <span class="chapter-index">10</span>
+                            <h2>Contact</h2>
+                            <p>A direct contact path for privacy-related questions and corrections.</p>
+                        </div>
+                        <div class="chapter-body">
+                            <p>
+                                For privacy questions related to MuseMood, contact
+                                <a href="mailto:berkay81341@gmail.com">berkay81341@gmail.com</a>.
+                            </p>
+                        </div>
+                    </article>
                 </section>
 
-                <section class="summary-card" aria-label="Quick summary">
-                    <div class="summary-panel">
-                        <strong>Collected directly by MuseMood</strong>
-                        <p>No name, email, account profile, or password is required for the core app experience.</p>
-                    </div>
-                    <div class="summary-panel">
-                        <strong>Stored locally</strong>
-                        <p>Preferences, cached images, prepared decks, and similar runtime data may stay on your device.</p>
-                    </div>
-                    <div class="summary-panel">
-                        <strong>Shared indirectly with sources</strong>
-                        <p>Public museum APIs and image hosts may receive standard request metadata such as IP address.</p>
-                    </div>
-                </section>
-
-                <section class="policy-card" id="identity">
-                    <h3>1. App identity</h3>
+                <aside class="policy-closing">
                     <p>
-                        MuseMood helps people discover and curate public museum artworks through a mood-based collectible
-                        card experience.
-                    </p>
-                    <p>
-                        MuseMood is built as a local-first app. The core experience is designed to function without
-                        account registration or a persistent personal profile stored by MuseMood.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="accounts">
-                    <h3>2. Accounts</h3>
-                    <p>
-                        MuseMood does not require account creation, sign-in, or profile registration to use the core
-                        app experience.
-                    </p>
-                    <p>
-                        MuseMood does not ask you to submit your name, email address, password, phone number, or
-                        similar personal identity information inside the app for ordinary use.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="tracking">
-                    <h3>3. Ads and tracking</h3>
-                    <p>
-                        MuseMood does not intentionally include advertising SDKs, analytics SDKs, or behavioral
-                        tracking systems for the core app experience.
-                    </p>
-                    <p>
-                        This static privacy site also does not include cookies, analytics scripts, ad pixels, or
-                        third-party tracking tags.
-                    </p>
-                </section>
-
-                <section class="policy-card note-card" id="device-data">
-                    <h3>4. Data on your device</h3>
-                    <p>
-                        To support offline readiness and a smooth art-card experience, MuseMood may keep data locally on
-                        your device. Depending on app features in use, this can include:
-                    </p>
-                    <ul>
-                        <li>Saved or favorited artwork cards</li>
-                        <li>Mood selections and source preferences</li>
-                        <li>Theme, reduced-motion, haptics, and similar app settings</li>
-                        <li>Cached artwork images and public museum metadata</li>
-                        <li>Prepared daily decks, session decks, and related readiness state</li>
-                        <li>Local cache health or source readiness metadata</li>
-                    </ul>
-                    <p>
-                        This information is intended to remain on your device unless you clear app data, clear cache,
-                        uninstall the app, or use an in-app cache-clearing control.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="network">
-                    <h3>5. Network requests</h3>
-                    <p>
-                        MuseMood may connect to public museum APIs, public knowledge sources, and image servers to load
-                        artwork records, artwork images, and related source metadata.
-                    </p>
-                    <p>Examples may include The Metropolitan Museum of Art, Rijksmuseum, Wellcome Collection, and Wikidata.</p>
-                    <p>
-                        When these requests occur, the source or host serving the response may receive standard
-                        technical request information such as your IP address, request headers, and timing data
-                        according to its own privacy practices.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="links">
-                    <h3>6. External links</h3>
-                    <p>
-                        MuseMood may open official museum or source pages in your browser or another app when you choose
-                        to view an external record.
-                    </p>
-                    <p>
-                        Those external websites are not operated by MuseMood and may follow separate privacy policies,
-                        security practices, and terms.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="deletion">
-                    <h3>7. Deletion and cache clearing</h3>
-                    <p>
-                        You can usually remove locally stored MuseMood data through Android system settings by clearing
-                        app storage or app data.
-                    </p>
-                    <p>
-                        If the app offers an image-cache clearing action, that control is intended to remove cached
-                        artwork images rather than every category of local app state.
-                    </p>
-                    <p>
-                        Uninstalling the app may also remove local data, subject to how your device and operating
-                        system handle app storage.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="children">
-                    <h3>8. Children</h3>
-                    <p>
-                        MuseMood is not designed specifically for children and does not knowingly collect personal data
-                        from children for the core app experience.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="attribution">
-                    <h3>9. Attribution and non-affiliation</h3>
-                    <p>
-                        Artwork records, images, metadata, and source pages remain the property or responsibility of
-                        their respective institutions and providers.
-                    </p>
-                    <p>
-                        MuseMood is not affiliated with, sponsored by, or endorsed by The Metropolitan Museum of Art,
-                        Rijksmuseum, Wellcome Collection, Wikidata, or any other source provider unless explicitly
-                        stated elsewhere.
-                    </p>
-                    <p>
-                        Museum-provided titles, artist names, and metadata may appear in their original language or
-                        source format.
-                    </p>
-                </section>
-
-                <section class="policy-card" id="contact">
-                    <h3>10. Contact</h3>
-                    <p>
-                        For privacy questions related to MuseMood, contact
-                        <a href="mailto:berkay81341@gmail.com">berkay81341@gmail.com</a>.
-                    </p>
-                </section>
-
-                <aside class="quote-card">
-                    <p>
-                        The policy is intentionally narrow: it describes MuseMood's role, the local device model, and
+                        This policy is intentionally narrow. It explains MuseMood's role, the local device model, and
                         the public-source network layer without pretending to control third-party museum infrastructure.
                     </p>
                 </aside>
@@ -227,6 +354,43 @@
             </main>
         </div>
     </div>
+
+    <script>
+        (function () {
+            const sections = Array.from(document.querySelectorAll("[data-policy-section]"));
+            const links = Array.from(document.querySelectorAll("[data-policy-link]"));
+
+            if (!sections.length || !links.length || !("IntersectionObserver" in window)) {
+                return;
+            }
+
+            const activate = (id) => {
+                for (const link of links) {
+                    const isActive = link.getAttribute("href") === "#" + id;
+                    link.classList.toggle("is-active", isActive);
+                }
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                const visible = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+                if (visible) {
+                    activate(visible.target.id);
+                }
+            }, {
+                rootMargin: "-20% 0px -55% 0px",
+                threshold: [0.2, 0.45, 0.7]
+            });
+
+            for (const section of sections) {
+                observer.observe(section);
+            }
+
+            activate(sections[0].id);
+        }());
+    </script>
 </body>
 
 </html>
